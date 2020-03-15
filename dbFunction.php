@@ -24,8 +24,8 @@ class dbFunction extends dbConnection{
             return  $row['answer'] . "<br>";
         }
         elseif($i==$count){
-            addQuestion($input);
-            return 'Sorry';
+            $this->addQuestion($input);
+            return 'Sorry I cannot understand';
         }
        }
 }
